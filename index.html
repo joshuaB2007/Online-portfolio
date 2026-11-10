@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ✏️ The text in the browser tab and in Google search results -->
+    <title>Joshua B | Electrical and Computer Engineer</title>
+    <meta
+      name="description"
+      content="Joshua B is a software engineer who builds fast, accessible web apps and developer tools."
+    />
+
+    <!-- The little icon in the browser tab -->
+    <link rel="icon" href="assets/favicon.svg" />
+
+    <!-- Fonts (from Google Fonts) and icons (from Font Awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Our own styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =====================================================
+       NAVIGATION BAR
+       ===================================================== -->
+    <header class="nav">
+      <div class="container">
+        <!-- ✏️ Your logo text -->
+        <a href="#" class="logo"><span class="highlight">~/</span>Joshua</a>
+
+        <nav>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#experience">experience</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-buttons">
+          <button
+            class="icon-button"
+            id="theme-toggle"
+            aria-label="Switch light or dark mode"
+          >
+            <i class="fa-solid fa-sun"></i>
+          </button>
+          <!-- This menu button only shows up on phones -->
+          <button
+            class="icon-button"
+            id="menu-toggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- =====================================================
+         HERO: the first thing visitors see
+         ===================================================== -->
+      <section class="hero-section">
+        <div class="container hero">
+          <div class="hero-text">
+            <!-- ✏️ Your job-hunt status. Delete this line if you don't need it. -->
+            <p class="status">
+              <span class="status-dot"></span> Open to internships &amp;
+              new-grad roles
+            </p>
+
+            <!-- ✏️ Your name, role, and one-sentence pitch -->
+            <h1>Hi, I'm <span class="highlight">Jordan Lee</span>.</h1>
+            <p class="hero-role">Software Engineer</p>
+            <p class="hero-tagline">
+              I build fast, accessible web apps and the tools that make
+              developers' lives easier.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#projects" class="btn"
+                >View my work <i class="fa-solid fa-arrow-down"></i
+              ></a>
+              <!-- ✏️ Replace assets/resume.pdf with your own resume (keep the same file name) -->
+              <a
+                href="assets/resume.pdf"
+                class="btn btn-outline"
+                target="_blank"
+              >
+                <i class="fa-regular fa-file-lines"></i> Resume
+              </a>
+            </div>
+
+            <!-- ✏️ Your social links. Find more icons at https://fontawesome.com/icons -->
+            <div class="socials">
+              <a
+                href="https://github.com/your-username"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/your-username"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://x.com/your-username"
+                target="_blank"
+                aria-label="X"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="mailto:jordan.lee@example.com" aria-label="Email"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         ABOUT
+         ===================================================== -->
+      <section id="about">
+        <div class="container">
+          <p class="section-label">// about</p>
+          <h2 class="section-title">About me</h2>
+
+          <div class="about-grid">
+            <div class="about-text">
+              <!-- ✏️ Your photo: put it in the assets folder, then change src to match,
+                 e.g. src="assets/me.jpg" -->
+              <img
+                src="assets/me.JPG"
+                alt="Photo of Your Name"
+                class="profile-photo"
+              />
+
+              <!-- ✏️ A few short paragraphs about you.
+                 Wrap a word in <strong></strong> to make it bold. -->
+              <p>
+                Paragraph 1: Who are you and what do you do? Mention your
+                school, program, or job, and how you got into coding.
+              </p>
+              <p>
+                Paragraph 2: What are you learning or excited about right now?
+                What do you like to do when you're not coding?
+              </p>
+            </div>
+
+            <!-- ✏️ QUICK FACTS, styled like code. Just change the text inside the quotes.
+               Heads up: inside <pre>, spaces and line breaks show up exactly as typed. -->
+            <div class="code-card">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="window-title">about-me.js</span>
+              </div>
+              <pre><code><span class="keyword">const</span> <span class="name">me</span> = {
+  location: <span class="string">"Your City, State"</span>,
+  education: <span class="string">"Your School or Program"</span>,
+  learning: [<span class="string">"Skill 1"</span>, <span class="string">"Skill 2"</span>],
+  hobbies: [<span class="string">"Hobby 1"</span>, <span class="string">"Hobby 2"</span>],
+  openToWork: <span class="value">true</span>,
+};</code></pre>
+            </div>
+          </div>
+
+          <!-- ✏️ SKILLS: each card is one category. Add or remove <li> items freely.
+             Rename the categories, or copy a whole <div class="card"> to add one. -->
+          <h3 class="sub-title">
+            <span class="highlight">$</span> tech I work with
+          </h3>
+          <div class="skills-grid">
+            <div class="card">
+              <h4>Languages</h4>
+              <ul class="tags">
+                <li>Language 1</li>
+                <li>Language 2</li>
+                <li>Language 3</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>Frameworks</h4>
+              <ul class="tags">
+                <li>Framework 1</li>
+                <li>Framework 2</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h4>Tools</h4>
+              <ul class="tags">
+                <li>Tool 1</li>
+                <li>Tool 2</li>
+                <li>Tool 3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         PROJECTS
+         To add a project: copy everything from <article> to </article>,
+         paste it right below, then change the text and links.
+         ===================================================== -->
+      <section id="projects">
+        <div class="container">
+          <p class="section-label">// projects</p>
+          <h2 class="section-title">Things I've built</h2>
+
+          <div class="projects-grid">
+            <!-- ===== PROJECT 1 ===== -->
+            <article class="card project-card">
+              <!-- ✏️ Optional screenshot: put the image in the assets folder, then remove
+                 the arrows around this line: <img src="assets/my-project.png" alt="Screenshot of my project"> -->
+              <div class="project-header">
+                <i class="fa-regular fa-folder-open folder-icon"></i>
+                <!-- ✏️ Your links. Delete a line if you don't have that link. -->
+                <div class="project-links">
+                  <a
+                    href="https://github.com/your-username/project-name"
+                    target="_blank"
+                    aria-label="View code on GitHub"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://your-live-demo-link.com"
+                    target="_blank"
+                    aria-label="View live demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- ✏️ Project name -->
+              <h3>Project Name</h3>
+              <!-- ✏️ 1–2 sentences: What does it do? What was the hardest or coolest part? -->
+              <p>
+                Describe what your project does and who it's for. Mention one
+                thing you're proud of, like a feature you built or a problem you
+                solved.
+              </p>
+              <!-- ✏️ The languages and tools you used. Add or remove <li> lines. -->
+              <ul class="tags">
+                <li>Tool 1</li>
+                <li>Tool 2</li>
+                <li>Tool 3</li>
+              </ul>
+            </article>
+
+            <!-- ===== PROJECT 2 ===== -->
+            <article class="card project-card">
+              <div class="project-header">
+                <i class="fa-regular fa-folder-open folder-icon"></i>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/your-username/project-name"
+                    target="_blank"
+                    aria-label="View code on GitHub"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a
+                    href="https://your-live-demo-link.com"
+                    target="_blank"
+                    aria-label="View live demo"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <h3>Project Name</h3>
+              <p>
+                Describe what your project does and who it's for. Mention one
+                thing you're proud of, like a feature you built or a problem you
+                solved.
+              </p>
+              <ul class="tags">
+                <li>Tool 1</li>
+                <li>Tool 2</li>
+                <li>Tool 3</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         EXPERIENCE & EDUCATION
+         To add a job: copy from <article> to </article> and paste it below.
+         Put your most recent job first.
+         ===================================================== -->
+      <section id="experience">
+        <div class="container">
+          <p class="section-label">// experience</p>
+          <h2 class="section-title">Where I've worked</h2>
+
+          <div class="timeline">
+            <!-- ===== JOB 1 ===== -->
+            <article class="card timeline-item">
+              <div class="timeline-header">
+                <!-- ✏️ Your job title and the company -->
+                <h3>Job Title <span class="highlight">@ Company Name</span></h3>
+                <!-- ✏️ When you worked there -->
+                <span class="date">Month Year – Present</span>
+              </div>
+              <!-- ✏️ 2–3 things you did. Start with an action word (Built, Led, Improved...)
+                 and add a number if you can (how many people, how much faster). -->
+              <ul>
+                <li>Something you built, fixed, or improved.</li>
+                <li>Another accomplishment, with a number if you have one.</li>
+              </ul>
+              <!-- ✏️ Tools you used at this job. Delete this list if it doesn't fit. -->
+              <ul class="tags">
+                <li>Tool 1</li>
+                <li>Tool 2</li>
+              </ul>
+            </article>
+
+            <!-- ===== JOB 2 ===== -->
+            <article class="card timeline-item">
+              <div class="timeline-header">
+                <h3>Job Title <span class="highlight">@ Company Name</span></h3>
+                <span class="date">Month Year – Month Year</span>
+              </div>
+              <ul>
+                <li>Something you built, fixed, or improved.</li>
+                <li>Another accomplishment, with a number if you have one.</li>
+              </ul>
+              <ul class="tags">
+                <li>Tool 1</li>
+                <li>Tool 2</li>
+              </ul>
+            </article>
+          </div>
+
+          <!-- ✏️ EDUCATION (bootcamps and certifications count too!) -->
+          <h3 class="sub-title"><span class="highlight">$</span> education</h3>
+          <div class="timeline">
+            <article class="card timeline-item">
+              <div class="timeline-header">
+                <!-- ✏️ Your degree, certificate, or bootcamp, and the school -->
+                <h3>
+                  Degree or Program <span class="highlight">@ School Name</span>
+                </h3>
+                <span class="date">Start Year – End Year</span>
+              </div>
+              <!-- ✏️ Classes, clubs, awards, or anything else worth mentioning -->
+              <p>Relevant coursework, clubs, or awards.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =====================================================
+         CONTACT
+         ===================================================== -->
+      <section id="contact">
+        <div class="container">
+          <p class="section-label">// contact</p>
+          <h2 class="section-title">Let's build something together.</h2>
+          <!-- ✏️ Your message and email -->
+          <p class="contact-text">
+            I'm looking for software engineering internships and new-grad roles.
+            Whether you have an opportunity, a question, or just want to talk
+            tech, my inbox is always open.
+          </p>
+          <!-- ✏️ Put any link inside the quotes after href=
+             e.g. your LinkedIn, a Google Form, or mailto:you@example.com for email -->
+          <a
+            href="https://www.linkedin.com/in/your-username"
+            class="btn"
+            target="_blank"
+            ><i class="fa-solid fa-paper-plane"></i> Get in touch</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+    <footer>
+      <!-- ✏️ Point "View source" at your own repo. Recruiters love seeing the code. -->
+      <p>
+        © <span id="year">2026</span> Jordan Lee · Built with HTML, CSS &amp;
+        JavaScript ·
+        <a
+          href="https://github.com/your-username/your-username.github.io"
+          target="_blank"
+          >View source</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
